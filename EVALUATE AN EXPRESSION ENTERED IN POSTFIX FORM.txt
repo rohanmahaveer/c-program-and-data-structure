@@ -1,0 +1,102 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+#include<math.h>
+#include<ctype.h>
+int MAX=50;
+struct postfix
+{
+       int stack[50];
+        int top,nn;
+      char *s;
+};
+    void initpostfix(struct postfix *);
+     void setexpr(struct postfix *, char *str);
+     void push(struct postfix *, int item);
+     int pop(struct postfix *);
+     void calculate(struct postfix *);
+     void show(struct postfix );
+
+int main()
+{
+   char expr[50];
+  printf("Enter postfix expression to be evaluated:\n");
+  scanf("%s",expr);
+   struct postfix p;
+  initpostfix(&p);
+  setexpr(&p,expr);
+  calculate(&p);
+  show(p);
+  return 0;
+}
+void initpostfix(struct postfix *p)
+  {
+    p->top=-1;
+  }
+void setexpr(struct postfix *p, char *str)
+{
+    p->s=str;
+}
+void push(struct postfix *p, int item)
+{
+        if(p->top==MAX-1)
+        {
+            printf("Stack is full\n");
+        }
+        else
+        {
+            p->top++;
+            p->stack[p->top]=item;
+        }
+}
+int pop(struct postfix *p)
+{
+     int data;
+     if(p->top==-1)
+     {
+         printf("Stack is empty\n");
+         return 0;
+     }
+
+         data=p->stack[p->top];
+         p->top--;
+  return (data);
+}
+void calculate(struct postfix *p)
+{
+   int a,b,c;
+   while(*(p->s))
+   {
+       if(isdigit(*(p->s)))
+       {
+           p->nn=*(p->s)-'0';
+           push(p,p->nn);
+       }
+       else
+       {
+           a=pop(p);
+           b=pop(p);
+           switch(*(p->s))
+           {
+               case '+':c=b+a;
+               break;
+               case '-':c=b-a;
+               break;
+               case '*':c=b*a;
+               break;
+               case '/':c=b/a;
+               break;
+               case '%':c=b%a;
+               break;
+              default:exit(0);
+           }
+           push(p,c);
+       }
+       p->s++;
+   }
+}
+void show(struct postfix p)
+{
+     p.nn=pop(&p);
+     printf("Result is: %d",p.nn);
+}
