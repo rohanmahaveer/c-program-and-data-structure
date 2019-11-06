@@ -179,3 +179,131 @@ void setexpr (struct postfix *, char *)
 void push (struct postfix *, int) 
 int pop (struct postfix *) 
 void calculate (struct postfix *) 
+
+
+#  GRAPH REPRESENTATIONS - LinkedList
+
+Write a program to obtain the adjacency list representation of a graph from its adjacency matrix representation.
+
+
+Input and Output Format:
+
+Refer sample input and output for formatting specifications.
+
+ 
+[All text in bold corresponds to input and the rest corresponds to output]
+
+
+Sample Input and Output 1:
+
+Please enter the number of nodes in the graph
+
+4
+
+Please enter the number of edges in the graph
+
+4
+
+Is the graph directed
+
+no
+
+Enter the start node, end node and weight of edge no 0
+
+0 1 7
+
+Enter the start node, end node and weight of edge no 1
+
+2 3 5
+
+Enter the start node, end node and weight of edge no 2
+
+1 2 4
+
+Enter the start node, end node and weight of edge no 3
+
+3 0 6
+
+Adjacency Matrix Representation:
+
+0 7 0 6
+
+7 0 4 0
+
+0 4 0 5
+
+6 0 5 0
+
+Adjacency List Representation:
+
+Node 0 is connected to the following nodes:
+
+Node 1 with edge weight 7
+
+Node 3 with edge weight 6
+
+Node 1 is connected to the following nodes:
+
+Node 0 with edge weight 7
+
+Node 2 with edge weight 4
+
+Node 2 is connected to the following nodes:
+
+Node 1 with edge weight 4
+
+Node 3 with edge weight 5
+
+Node 3 is connected to the following nodes:
+
+Node 0 with edge weight 6
+
+Node 2 with edge weight 5
+
+Sample Input and Output 2:
+
+Please enter the number of nodes in the graph
+
+4
+
+Please enter the number of edges in the graph
+
+3
+
+Is the graph directed
+
+yes
+
+Enter the start node, end node and weight of edge no 0
+
+0 1 3
+
+Enter the start node, end node and weight of edge no 1
+
+0 2 4
+
+Enter the start node, end node and weight of edge no 2
+
+1 2 5
+
+Adjacency Matrix Representation:
+
+0 3 4 0
+
+0 0 5 0
+
+0 0 0 0
+
+0 0 0 0
+
+Adjacency List Representation:
+
+Node 0 is connected to the following nodes:
+
+Node 1 with edge weight 3
+
+Node 2 with edge weight 4
+
+Node 1 is connected to the following nodes:
+
+Node 2 with edge weight 5
