@@ -307,3 +307,89 @@ Node 2 with edge weight 4
 Node 1 is connected to the following nodes:
 
 Node 2 with edge weight 5
+
+
+# BINARY SEARCH TREE AND TRAVERSALS
+
+
+Implement a program to construct a Binary Search Tree and also display the elements in the tree using Inorder , Preorder and Postorder traversals.
+
+
+Create a structure
+
+ struct tnode {
+ 
+int data;
+
+struct tnode * leftc;
+
+struct tnode * rightc;
+
+};
+ 
+
+Binary Search tree is a binary tree in which each internal node x stores an element such that the element stored in the left subtree of x are less than x and elements stored in the right subtree of x are greater than or equal to x. This is called binary-search-tree property.
+
+ 
+
+Input and Output Format:
+
+Refer Sample Input and Output for formatting specifications.
+
+ 
+
+[All text in bold corresponds to input and the rest corresponds to output]
+
+
+
+Sample Input and Output:
+
+Enter the element to be inserted in the tree
+
+1
+
+Do you want to insert another element?
+
+yes
+
+Enter the element to be inserted in the tree
+
+2
+
+Do you want to insert another element?
+
+yes
+
+Enter the element to be inserted in the tree
+
+3
+
+Do you want to insert another element?
+
+yes
+
+Enter the element to be inserted in the tree
+
+4
+
+Do you want to insert another element?
+
+no
+
+Inorder Traversal : The elements in the tree are 1 2 3 4
+
+Preorder Traversal : The elements in the tree are 1 2 3 4
+
+Postorder Traversal : The elements in the tree are 4 3 2 1
+
+ 
+
+Function Definitions:
+
+void insert (struct tnode **, int num) 
+
+void inorder (struct tnode * s) 
+
+void preorder (struct tnode * s) 
+
+void postorder (struct tnode * s) 
