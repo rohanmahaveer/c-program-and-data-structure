@@ -185,14 +185,10 @@ void calculate (struct postfix *)
 
 Write a program to obtain the adjacency list representation of a graph from its adjacency matrix representation.
 
-
 Input and Output Format:
 
 Refer sample input and output for formatting specifications.
-
- 
 [All text in bold corresponds to input and the rest corresponds to output]
-
 
 Sample Input and Output 1:
 
@@ -330,17 +326,11 @@ struct tnode * rightc;
 
 Binary Search tree is a binary tree in which each internal node x stores an element such that the element stored in the left subtree of x are less than x and elements stored in the right subtree of x are greater than or equal to x. This is called binary-search-tree property.
 
- 
-
-Input and Output Format:
+ Input and Output Format:
 
 Refer Sample Input and Output for formatting specifications.
 
- 
-
-[All text in bold corresponds to input and the rest corresponds to output]
-
-
+ [All text in bold corresponds to input and the rest corresponds to output]
 
 Sample Input and Output:
 
@@ -382,9 +372,7 @@ Preorder Traversal : The elements in the tree are 1 2 3 4
 
 Postorder Traversal : The elements in the tree are 4 3 2 1
 
- 
-
-Function Definitions:
+ Function Definitions:
 
 void insert (struct tnode **, int num) 
 
@@ -393,3 +381,167 @@ void inorder (struct tnode * s)
 void preorder (struct tnode * s) 
 
 void postorder (struct tnode * s) 
+
+
+# DEPTH FIRST TRAVERSAL - DFT
+
+Write a program to implement Depth First Traversal for a given graph
+
+Input and Output Format:
+Refer Sample Input and Output.
+ 
+
+Sample Input and Output 1:
+
+Enter the number of nodes in the graph
+
+4
+
+Enter the number of edges in the graph
+
+5
+
+Is the graph directed(yes/no)
+
+no
+
+Enter the start node, end node and weight of edge no 0
+
+0 1 4
+
+Enter the start node, end node and weight of edge no 1
+
+0 3 6
+
+Enter the start node, end node and weight of edge no 2
+
+1 2 2
+
+Enter the start node, end node and weight of edge no 3
+
+1 3 1
+
+Enter the start node, end node and weight of edge no 4
+
+2 3 5
+
+Adjacency Matrix Representation:
+
+0 4 0 6
+
+4 0 2 1
+
+0 2 0 5
+
+6 1 5 0
+
+Adjacency List Representation:
+
+Node 0 is connected to the following nodes:
+
+Node 1 with edge weight 4
+
+Node 3 with edge weight 6
+
+Node 1 is connected to the following nodes:
+
+Node 0 with edge weight 4
+
+Node 2 with edge weight 2
+
+Node 3 with edge weight 1
+
+Node 2 is connected to the following nodes:
+
+Node 1 with edge weight 2
+
+Node 3 with edge weight 5
+
+Node 3 is connected to the following nodes:
+
+Node 0 with edge weight 6
+
+Node 1 with edge weight 1
+
+Node 2 with edge weight 5
+
+Enter the starting node / vertex for depth first traversal
+
+o
+
+Depth First Traversal starting from node 0
+
+0 1 2 3
+
+Sample Input and Output 2:
+
+Enter the number of nodes in the graph
+
+4
+
+Enter the number of edges in the graph
+
+5
+
+Is the graph directed(yes/no)
+
+yes
+
+Enter the start node, end node and weight of edge no 0
+
+0 1 4
+
+Enter the start node, end node and weight of edge no 1
+
+0 3 6
+
+Enter the start node, end node and weight of edge no 2
+
+2 1 2
+
+Enter the start node, end node and weight of edge no 3
+
+1 3 1
+
+Enter the start node, end node and weight of edge no 4
+
+3 2 5
+
+Adjacency Matrix Representation:
+
+0 4 0 6
+
+0 0 0 1
+
+0 2 0 0
+
+0 0 5 0
+
+Adjacency List Representation:
+
+Node 0 is connected to the following nodes:
+
+Node 1 with edge weight 4
+
+Node 3 with edge weight 6
+
+Node 1 is connected to the following nodes:
+
+Node 3 with edge weight 1
+
+Node 2 is connected to the following nodes:
+
+Node 1 with edge weight 2
+
+Node 3 is connected to the following nodes:
+
+Node 2 with edge weight 5
+
+Enter the starting node / vertex for depth first traversal
+
+o
+
+Depth First Traversal starting from node 0
+
+0 1 3 2
+ 
