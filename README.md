@@ -545,3 +545,100 @@ Depth First Traversal starting from node 0
 
 0 1 3 2
  
+ 
+# BREADTH FIRST TRAVERSAL - BFT
+
+ Write a program to implement Breadth First Traversal for a given graph
+
+
+Input and Output Format:
+
+Refer sample input and output for formatting specifications.
+
+ 
+
+[All text in bold corresponds to input and the rest corresponds to output]
+
+
+Sample Input and Output 1:
+
+Enter the number of nodes in the graph
+
+4
+
+Enter the number of edges in the graph
+
+5
+Is the graph directed(yes/no)
+
+no
+
+Enter the start node and end node of edge no 0
+
+0 1
+
+Enter the start node and end node of edge no 1
+
+0 3
+
+Enter the start node and end node of edge no 2
+
+1 2
+
+Enter the start node and end node of edge no 3
+
+1 3
+
+Enter the start node and end node of edge no 4
+
+2 3
+
+Enter the starting node / vertex for breadth first traversal
+
+o
+
+Breadth First Traversal starting from node 0
+
+0 1 3 2
+
+Sample Input and Output 2:
+
+Enter the number of nodes in the graph
+
+4
+
+Enter the number of edges in the graph
+
+5
+
+Is the graph directed(yes/no)
+
+yes
+
+Enter the start node and end node of edge no 0
+
+0 1
+
+Enter the start node and end node of edge no 1
+
+3 0
+
+Enter the start node and end node of edge no 2
+
+1 2
+
+Enter the start node and end node of edge no 3
+
+1 3
+
+Enter the start node and end node of edge no 4
+
+3 2
+
+Enter the starting node / vertex for breadth first traversal
+
+o
+
+Breadth First Traversal starting from node 0
+
+0 1 2 3
