@@ -642,3 +642,247 @@ o
 Breadth First Traversal starting from node 0
 
 0 1 2 3
+
+#  CIRCULAR QUEUE - LINKED LIST IMPLEMENTATION
+
+Queue - Linked List Implementation
+Consider implementing a Circular Queue using a Linked List.
+
+ Create a structure
+
+struct node {
+
+    int data ;
+
+    struct node * link ;
+
+};
+
+ Write a program to implement enQueue(addcirq) and deQueue(delcirq) operations on queue and to display the contents of the queue.
+
+
+Create a function printMenu to print the following:
+
+Choice 1 : Enter element into Queue
+
+Choice 2 : Delete element from Queue
+
+Choice 3 : Display
+
+Any other choice : Exit
+
+ 
+
+Print the message “Queue is empty” in the deQueue(delcirq) function and return the value -1000 when an attempt is made to delete data from an empty queue.
+
+
+Function specifications:
+
+void addcirq ( struct node **f, struct node **r, int item ) --- f corresponds to the front node and r corresponds to the rear node.
+
+int delcirq ( struct node **f, struct node **r ) --- f corresponds to the front node and r corresponds to the rear node.
+
+void cirq_display ( struct node *f ) --- f coresponds to the pointer to the front node)
+
+void printMenu( )
+ 
+
+Input and Output Format:
+
+Refer sample input and output for formatting specifications.
+
+Note that the statement “The contents of the queue are” is in the main function. In the display function, if the queue is empty, print “ {}”.
+
+
+[All text in bold corresponds to input and the rest corresponds to output]
+ 
+
+Sample Input and Output:
+
+Choice 1 : Enter element into Queue
+
+Choice 2 : Delete element from Queue
+
+Choice 3 : Display
+
+Any other choice : Exit
+
+Enter your choice
+
+1
+
+Enter the element to be inserted/entered
+
+20
+
+Choice 1 : Enter element into Queue
+
+Choice 2 : Delete element from Queue
+
+Choice 3 : Display
+
+Any other choice : Exit
+
+Enter your choice
+
+1
+
+Enter the element to be inserted/entered
+
+30
+
+Choice 1 : Enter element into Queue
+
+Choice 2 : Delete element from Queue
+
+Choice 3 : Display
+
+Any other choice : Exit
+
+Enter your choice
+
+1
+
+Enter the element to be inserted/entered
+
+40
+
+Choice 1 : Enter element into Queue
+
+Choice 2 : Delete element from Queue
+
+Choice 3 : Display
+
+Any other choice : Exit
+
+Enter your choice
+
+3
+
+The contents of the queue are 20 30 40
+
+Choice 1 : Enter element into Queue
+
+Choice 2 : Delete element from Queue
+
+Choice 3 : Display
+
+Any other choice : Exit
+
+Enter your choice
+
+1
+
+Enter the element to be inserted/entered
+
+50
+
+Choice 1 : Enter element into Queue
+
+Choice 2 : Delete element from Queue
+
+Choice 3 : Display
+
+Any other choice : Exit
+
+Enter your choice
+
+3
+
+The contents of the queue are 20 30 40 50
+
+Choice 1 : Enter element into Queue
+
+Choice 2 : Delete element from Queue
+
+Choice 3 : Display
+
+Any other choice : Exit
+
+Enter your choice
+
+2
+
+The deleted element is 20
+
+Choice 1 : Enter element into Queue
+
+Choice 2 : Delete element from Queue
+
+Choice 3 : Display
+
+Any other choice : Exit
+
+Enter your choice
+
+2
+
+The deleted element is 30
+
+Choice 1 : Enter element into Queue
+
+Choice 2 : Delete element from Queue
+
+Choice 3 : Display
+
+Any other choice : Exit
+
+Enter your choice
+
+2
+
+The deleted element is 40
+
+Choice 1 : Enter element into Queue
+
+Choice 2 : Delete element from Queue
+
+Choice 3 : Display
+
+Any other choice : Exit
+
+Enter your choice
+
+2
+
+The deleted element is 50
+
+Choice 1 : Enter element into Queue
+
+Choice 2 : Delete element from Queue
+
+Choice 3 : Display
+
+Any other choice : Exit
+
+Enter your choice
+
+2
+
+Queue is empty
+
+Choice 1 : Enter element into Queue
+
+Choice 2 : Delete element from Queue
+
+Choice 3 : Display
+
+Any other choice : Exit
+
+Enter your choice
+
+3
+
+The contents of the queue are {}
+
+Choice 1 : Enter element into Queue
+
+Choice 2 : Delete element from Queue
+
+Choice 3 : Display
+
+Any other choice : Exit
+
+Enter your choice
+
+4
