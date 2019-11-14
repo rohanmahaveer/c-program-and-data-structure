@@ -886,3 +886,329 @@ Any other choice : Exit
 Enter your choice
 
 4
+
+# QUEUE 2 : ARRAY IMPLEMENTATION
+
+Consider implementing a fixed size circular queue of maximum size 5 using an array.
+
+Create a structure
+
+struct queue {
+
+int contents[5];
+
+int front;
+
+int rear;
+
+} ;
+
+ 
+
+Note that the array contents holds the contents of the queue and the integer front stores the index of the front element in the queue and the integer rear stores the index of the last element in the queue.
+
+Write a program to implement enQueue and deQueue operation on queue and to display the contents of the queue.
+
+In the initQueue function intialize the value of front and rear to -1.
+
+Print the message “Queue is full” in the enQueue function when an attempt is made to insert a data into a full queue.
+
+Print the message “Queue is empty” in the deQueue function and return the value -1000 when an attempt is made to delete data from an empty queue.
+
+Refer function specifications for further details.
+
+ 
+
+Input and Output Format:
+
+Refer sample input and output for formatting specifications.
+
+Note that the statement “The contents of the queue are” is in the main function. In the display function, if the queue is empty, print “ {}”.
+
+[All text in bold corresponds to input and the rest corresponds to output]
+
+Sample Input and Output:
+
+Choice 1 : Enter element into Queue
+
+Choice 2 : Delete element from Queue
+
+Choice 3 : Display
+
+Any other choice : Exit
+
+Enter your choice
+
+3
+
+The contents of the queue are {}
+
+Choice 1 : Enter element into Queue
+
+Choice 2 : Delete element from Queue
+
+Choice 3 : Display
+
+Any other choice : Exit
+
+Enter your choice
+
+1
+
+Enter the element to be inserted/entered
+
+10
+
+Choice 1 : Enter element into Queue
+
+Choice 2 : Delete element from Queue
+
+Choice 3 : Display
+
+Any other choice : Exit
+
+Enter your choice
+
+1
+
+Enter the element to be inserted/entered
+
+20
+
+Choice 1 : Enter element into Queue
+
+Choice 2 : Delete element from Queue
+
+Choice 3 : Display
+
+Any other choice : Exit
+
+Enter your choice
+
+1
+
+Enter the element to be inserted/entered
+
+30
+
+Choice 1 : Enter element into Queue
+
+Choice 2 : Delete element from Queue
+
+Choice 3 : Display
+
+Any other choice : Exit
+
+Enter your choice
+
+1
+
+Enter the element to be inserted/entered
+
+40
+
+Choice 1 : Enter element into Queue
+
+Choice 2 : Delete element from Queue
+
+Choice 3 : Display
+
+Any other choice : Exit
+
+Enter your choice
+
+1
+
+Enter the element to be inserted/entered
+
+50
+
+Choice 1 : Enter element into Queue
+
+Choice 2 : Delete element from Queue
+
+Choice 3 : Display
+
+Any other choice : Exit
+
+Enter your choice
+
+1
+
+Enter the element to be inserted/entered
+
+60
+
+Queue is full
+
+Choice 1 : Enter element into Queue
+
+Choice 2 : Delete element from Queue
+
+Choice 3 : Display
+
+Any other choice : Exit
+
+Enter your choice
+
+2
+
+The deleted element is 10
+
+Choice 1 : Enter element into Queue
+
+Choice 2 : Delete element from Queue
+
+Choice 3 : Display
+
+Any other choice : Exit
+
+Enter your choice
+
+2
+
+The deleted element is 20
+
+Choice 1 : Enter element into Queue
+
+Choice 2 : Delete element from Queue
+
+Choice 3 : Display
+
+Any other choice : Exit
+
+Enter your choice
+
+1
+
+Enter the element to be inserted/entered
+
+60
+
+Choice 1 : Enter element into Queue
+
+Choice 2 : Delete element from Queue
+
+Choice 3 : Display
+
+Any other choice : Exit
+
+Enter your choice
+
+3
+
+The contents of the queue are 30 40 50 60
+
+Choice 1 : Enter element into Queue
+
+Choice 2 : Delete element from Queue
+
+Choice 3 : Display
+
+Any other choice : Exit
+
+Enter your choice
+
+2
+
+The deleted element is 30
+
+Choice 1 : Enter element into Queue
+
+Choice 2 : Delete element from Queue
+
+Choice 3 : Display
+
+Any other choice : Exit
+
+Enter your choice
+
+2
+
+The deleted element is 40
+
+Choice 1 : Enter element into Queue
+
+Choice 2 : Delete element from Queue
+
+Choice 3 : Display
+
+Any other choice : Exit
+
+Enter your choice
+
+2
+
+The deleted element is 50
+
+Choice 1 : Enter element into Queue
+
+Choice 2 : Delete element from Queue
+
+Choice 3 : Display
+
+Any other choice : Exit
+
+Enter your choice
+
+3
+
+The contents of the queue are 60
+
+Choice 1 : Enter element into Queue
+
+Choice 2 : Delete element from Queue
+
+Choice 3 : Display
+
+Any other choice : Exit
+
+Enter your choice
+
+2
+
+The deleted element is 60
+
+Choice 1 : Enter element into Queue
+
+Choice 2 : Delete element from Queue
+
+Choice 3 : Display
+
+Any other choice : Exit
+
+Enter your choice
+
+2
+
+Queue is empty
+
+Choice 1 : Enter element into Queue
+
+Choice 2 : Delete element from Queue
+
+Choice 3 : Display
+
+Any other choice : Exit
+
+Enter your choice
+
+3
+
+The contents of the queue are {}
+
+Choice 1 : Enter element into Queue
+
+Choice 2 : Delete element from Queue
+
+Choice 3 : Display
+
+Any other choice : Exit
+
+Enter your choice
+
+4
+
+ 
+
+ 
