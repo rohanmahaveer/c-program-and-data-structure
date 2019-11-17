@@ -1209,6 +1209,234 @@ Enter your choice
 
 4
 
+#  QUEUE 2 - LINKED LIST IMPLEMENTATION
+
+Consider implementing a Queue using a Linked List
+
+Create a structure
+
+struct queue{
+
+     int Data ;
+
+     struct queue * next ;
+
+} ;
+
  
 
+Write a program to implement enQueue and delQueue operations on queue and to display the contents of the queue.
+
+Print the message “Queue is empty” in the delQueue() function and return the value -1000 when an attempt is made to delete data from an empty queue.
+
+
+Function specifications:
+
+int delQueue(struct queue *q)
+void enQueue(struct queue *q,int value)
+void display(struct queue q)
+Input and Output Format:
+
+Refer sample input and output for formatting specifications.
+
+Note that the statement “The contents of the queue are” is in the main function. In the display function, if the queue is empty, print “ {}”.
+
+
+[All text in bold corresponds to input and the rest corresponds to output]
+
+Sample Input and Output:
+
+Choice 1 : Enter element into Queue
+
+Choice 2 : Delete element from Queue
+
+Choice 3 : Display
+
+Any other choice : Exit
+
+Enter your choice
+
+1
+
+Enter the element to be inserted/entered
+
+20
+
+Choice 1 : Enter element into Queue
+
+Choice 2 : Delete element from Queue
+
+Choice 3 : Display
+
+Any other choice : Exit
+
+Enter your choice
+
+1
+
+Enter the element to be inserted/entered
+
+30
+
+Choice 1 : Enter element into Queue
+
+Choice 2 : Delete element from Queue
+
+Choice 3 : Display
+
+Any other choice : Exit
+
+Enter your choice
+
+1
+
+Enter the element to be inserted/entered
+
+40
+
+Choice 1 : Enter element into Queue
+
+Choice 2 : Delete element from Queue
+
+Choice 3 : Display
+
+Any other choice : Exit
+
+Enter your choice
+
+3
+
+The contents of the queue are 20 30 40
+
+Choice 1 : Enter element into Queue
+
+Choice 2 : Delete element from Queue
+
+Choice 3 : Display
+
+Any other choice : Exit
+
+Enter your choice
+
+1
+
+Enter the element to be inserted/entered
+
+50
+
+Choice 1 : Enter element into Queue
+
+Choice 2 : Delete element from Queue
+
+Choice 3 : Display
+
+Any other choice : Exit
+
+Enter your choice
+
+3
+
+The contents of the queue are 20 30 40 50
+
+Choice 1 : Enter element into Queue
+
+Choice 2 : Delete element from Queue
+
+Choice 3 : Display
+
+Any other choice : Exit
+
+Enter your choice
+
+2
+
+The deleted element is 20
+
+Choice 1 : Enter element into Queue
+
+Choice 2 : Delete element from Queue
+
+Choice 3 : Display
+
+Any other choice : Exit
+
+Enter your choice
+
+2
+
+The deleted element is 30
+
+Choice 1 : Enter element into Queue
+
+Choice 2 : Delete element from Queue
+
+Choice 3 : Display
+
+Any other choice : Exit
+
+Enter your choice
+
+2
+
+The deleted element is 40
+
+Choice 1 : Enter element into Queue
+
+Choice 2 : Delete element from Queue
+
+Choice 3 : Display
+
+Any other choice : Exit
+
+Enter your choice
+
+2
+
+The deleted element is 50
+
+Choice 1 : Enter element into Queue
+
+Choice 2 : Delete element from Queue
+
+Choice 3 : Display
+
+Any other choice : Exit
+
+Enter your choice
+
+2
+
+Queue is empty
+
+Choice 1 : Enter element into Queue
+
+Choice 2 : Delete element from Queue
+
+Choice 3 : Display
+
+Any other choice : Exit
+
+Enter your choice
+
+3
+
+The contents of the queue are {}
+
+Choice 1 : Enter element into Queue
+
+Choice 2 : Delete element from Queue
+
+Choice 3 : Display
+
+Any other choice : Exit
+
+Enter your choice
+
+4
+
+Function Definitions:
+
+void enQueue (struct queue *, int value) 
+int delQueue (struct queue *q) 
+void display (struct queue q) 
  
