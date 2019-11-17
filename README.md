@@ -1437,6 +1437,8 @@ Enter your choice
 Function Definitions:
 
 void enQueue (struct queue *, int value) 
+
 int delQueue (struct queue *q) 
+
 void display (struct queue q) 
  
