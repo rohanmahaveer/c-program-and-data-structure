@@ -1529,3 +1529,154 @@ Function Definitions:
 void append (struct node **, int ) 
 
 void display (struct node *) 
+
+# LINKED LIST : SEARCH
+
+ 
+
+Write a C program to find whether an element is present in the linked list.
+
+ 
+
+Define a structure
+
+struct node
+
+{
+
+int data;
+
+struct node * link;
+
+}
+
+ 
+
+Include functions
+
+append --- to add data at the end of the linked list.
+
+search --- to search for an element in the linked list. The function returns 1 if the element is present in the linked list and 0 otherwise.
+
+display --- to display all the data in the linked list.
+
+ 
+
+Refer function specifications for further details.
+
+[Note: The stmt. 'Elements in the linked list are' should be in the main function.
+
+ 
+
+Input and Output Format:
+
+Refer sample input and output for formatting specifications.
+
+ 
+
+Sample Input and Output 1:
+
+[All text in bold corresponds to input and the rest corresponds to output.]
+
+ 
+
+Enter the value
+
+5
+
+Do you want to add another node? Type Yes/No
+
+Yes
+
+Enter the value
+
+9
+
+Do you want to add another node? Type Yes/No
+
+Yes
+
+Enter the value
+
+2
+
+Do you want to add another node? Type Yes/No
+
+Yes
+
+Enter the value
+
+8
+
+Do you want to add another node? Type Yes/No
+
+No
+
+The elements in the linked list are 5 9 2 8
+
+Enter the element to be searched
+
+2
+
+2 is present in the linked list
+
+ 
+
+Sample Input and Output 2:
+
+[All text in bold corresponds to input and the rest corresponds to output.]
+
+ 
+
+Enter the value
+
+5
+
+Do you want to add another node? Type Yes/No
+
+Yes
+
+Enter the value
+
+9
+
+Do you want to add another node? Type Yes/No
+
+Yes
+
+Enter the value
+
+2
+
+Do you want to add another node? Type Yes/No
+
+Yes
+
+Enter the value
+
+8
+
+Do you want to add another node? Type Yes/No
+
+No
+
+The elements in the linked list are 5 9 2 8
+
+Enter the element to be searched
+
+12
+
+12 is not present in the linked list
+
+ 
+
+ 
+
+Function Definitions:
+
+void append (struct node **q, int num) 
+
+void display (struct node *q) 
+
+int search (struct node *q, int e) 
+
