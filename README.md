@@ -1680,3 +1680,75 @@ void display (struct node *q)
 
 int search (struct node *q, int e) 
 
+
+#  LINKED LIST : DELETE ANY ELEMENT
+
+
+Write a C program to delete a particular element in the Linked List.
+
+Refer function specifications for further details.
+
+ 
+
+Input and Output Format:
+
+Refer sample input and output for formatting specifications.
+
+ 
+
+Sample Input and Output:
+
+[All text in bold corresponds to input and the rest corresponds to output.]
+
+Enter the value
+
+4
+
+Do you want to add another node? Type Yes/No
+
+Yes
+
+Enter the value
+
+1
+
+Do you want to add another node? Type Yes/No
+
+Yes
+
+Enter the value
+
+8
+
+Do you want to add another node? Type Yes/No
+
+Yes
+
+Enter the value
+
+1
+
+Do you want to add another node? Type Yes/No
+
+No
+
+The elements in the linked list are 4 1 8 1
+
+Enter the element to be deleted
+
+8
+
+The elements in the linked list after deleting the element are 4 1 1
+
+ 
+
+Function Definitions:
+
+void append (struct node **, int) 
+
+void display (struct node *) 
+
+void delete (struct node **, int) 
+
+
+
