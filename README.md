@@ -1233,8 +1233,11 @@ Print the message “Queue is empty” in the delQueue() function and return the
 Function specifications:
 
 int delQueue(struct queue *q)
+
 void enQueue(struct queue *q,int value)
+
 void display(struct queue q)
+
 Input and Output Format:
 
 Refer sample input and output for formatting specifications.
