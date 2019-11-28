@@ -1754,4 +1754,97 @@ void display (struct node *)
 void delete (struct node **, int) 
 
 
+# L2 - LINKED LIST : COUNT
+
+Write a C program to count the number of nodes in the Linked List.
+
+ 
+
+Define a structure
+
+struct node
+
+{
+
+int data;
+
+struct node * link;
+
+}
+
+ 
+
+Include functions
+
+append --- to add data at the end of the linked list.
+
+display --- to display all the data in the linked list.
+
+count --- to return the number of data elements in the linked list.
+
+ 
+
+Refer function specifications for further details.
+
+[Note: The stmt. 'Elements in the linked list are' should be in the main function.
+
+ 
+
+Input and Output Format:
+
+Refer sample input and output for formatting specifications.
+
+ 
+
+Sample Input and Output:
+
+[All text in bold corresponds to input and the rest corresponds to output.]
+
+ 
+
+Enter the value
+
+10
+
+Do you want to add another node? Type Yes/No
+
+Yes
+
+Enter the value
+
+17
+
+Do you want to add another node? Type Yes/No
+
+Yes
+
+Enter the value
+
+11
+
+Do you want to add another node? Type Yes/No
+
+Yes
+
+Enter the value
+
+28
+
+Do you want to add another node? Type Yes/No
+
+No
+
+The elements in the linked list are 10 17 11 28
+
+The number of elements in the linked list is 4
+
+ 
+
+Problem Specifications
+
+void append ( struct node **, int ) ;
+
+void display ( struct node * ) ;
+
+int count ( struct node * ) ;
 
